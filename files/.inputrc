@@ -1,0 +1,25 @@
+# This file controls the behaviour of line input editing for
+# programs that use the GNU Readline library.  Existing
+# programs include FTP, Bash, and GDB.
+#
+# You can re-read the inputrc file with C-x C-r.
+# Lines beginning with '#' are comments.
+#
+# First, include any systemwide bindings and variable
+# assignments from /etc/Inputrc
+$include /etc/Inputrc
+
+#
+# Set various bindings for vi mode.
+
+set editing-mode vi 
+$if mode=vi
+
+set keymap vi-command
+# these are for vi-command mode
+Control-l: clear-screen
+
+set keymap vi-insert
+# these are for vi-insert mode
+Control-l: clear-screen
+$endif

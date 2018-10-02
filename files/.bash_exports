@@ -1,0 +1,7 @@
+export CDPATH=".:${HOME}/Repositories:"
+export EDITOR='vim'
+export MYSQL_HISTFILE=/dev/null
+
+export HISTCONTROL=ignoreboth
+export HISTSIZE=100000
+export HISTFILESIZE=200000
